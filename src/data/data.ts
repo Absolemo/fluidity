@@ -6,6 +6,7 @@ import pic_5 from "./pictures/pic_5.jpg"
 import pic_6 from "./pictures/pic_6.jpg"
 import pic_7 from "./pictures/pic_7.jpg"
 import pic_8 from "./pictures/pic_8.png"
+
 import { queryToken } from "../Startpage/Searchbar/Searchbar"
 
 export interface dataElem {
@@ -18,77 +19,95 @@ export interface linkGroup {
   links: dataElem[]
 }
 
-export const links: linkGroup[] = [
+export const links: linkGroup[] = [                               /* Hier werden die verschiedenen Reiter definiert ein block = ein balken auf der webseite*/
   {
-    title: "Reddit",
+    title: "Classics",
     links: [
       {
-        label: "r/startpages",
-        value: "https://www.reddit.com/r/startpages/",
+        label: "./youtube",
+        value: "https://youtube.com/",
       },
       {
-        label: "r/unixporn",
-        value: "https://www.reddit.com/r/unixporn/",
+        label: "./reddit",
+        value: "https://reddit.com/",
       },
       {
-        label: "r/rainmeter",
-        value: "https://www.reddit.com/r/rainmeter/",
+        label: "./instagram",
+        value: "https://instagram.com/",
       },
       {
-        label: "r/AnimalsBeingDerps",
-        value: "https://www.reddit.com/r/AnimalsBeingDerps/",
+        label: "./monkeytype",
+        value: "https://monkeytype.com/",
+      },
+      {
+        label: "./amazon",
+        value: "https://amazon.de",
+      },
+      {
+        label: "./prime_gaming",
+        value: "https://luna.amazon.de/claims/home",
+      },
+      {
+        label: "./humble_bundle",
+        value: "https://www.humblebundle.com/membership/home?hmb_campaign=25-11-04_choice_sitewide_banner&hmb_medium=banner"
       },
     ],
   },
   {
-    title: "3D Modelling",
+    title: "System",
     links: [
       {
-        label: "Blender",
-        value: "https://www.blender.org/",
+        label: "./mother_nature",
+        value: "https://192.168.2.81:5001/#/signin",
       },
       {
-        label: "BlenderGuru",
-        value: "https://www.blenderguru.com/",
+        label: "./synology_insight",
+        value: "https://insight.synology.com/login?error=login_required&error_description=The%20Authorization%20Server%20requires%20End-User%20authentication.%20Prompt%20%27none%27%20was%20requested,%20but%20no%20existing%20login%20session%20was%20found.&state=kpfszaavtetraszsqrntcpni",
       },
       {
-        label: "Poliigon",
-        value: "https://www.poliigon.com/",
+        label: "./tailscale",
+        value: "https://login.tailscale.com/admin/machines?refreshed=true",
       },
       {
-        label: "Blender tutorial",
-        value:
-          "https://www.youtube.com/watch?v=NyJWoyVx_XI&list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U",
+        label: "./aur",
+        value: "https://aur.archlinux.org/",
       },
       {
-        label: "The other Blender tutorial",
-        value:
-          "https://www.youtube.com/watch?v=bpvh-9H8S1g&list=PL8eKBkZzqDiU-qcoaghCz04sMitC1yx6k&index=1",
+        label: "./flathub",
+        value: "https://flathub.org/",
       },
+      {
+        label: "./github",
+        value: "https://github.com/",
+      },
+      {
+        label: "./archive.org",
+        value: "https://archive.org/",
+      }
     ],
   },
   {
     title: "Design",
     links: [
       {
-        label: "PixlrX",
-        value: "https://pixlr.com/x/",
+        label: "./alpha_coders",
+        value: "https://alphacoders.com/",
       },
       {
-        label: "AI Image Enlarger",
+        label: "./unsplash",
+        value: "https://unsplash.com/",
+      },
+      {
+        label: "./wallpaper_flare",
+        value: "https://www.wallpaperflare.com/",
+      },
+      {
+        label: "./deviant_art",
+        value: "https://www.deviantart.com/",
+      },
+      {
+        label: "./ai_image_enlarger",
         value: "https://bigjpg.com/en",
-      },
-      {
-        label: "Img to Svg Converter",
-        value: "https://picsvg.com/",
-      },
-      {
-        label: "Affinity",
-        value: "https://affinity.serif.com/en-us/tutorials/designer/desktop/",
-      },
-      {
-        label: "Affinity - YT",
-        value: "https://www.youtube.com/c/AffinityRevolution/playlists",
       },
     ],
   },
@@ -96,60 +115,63 @@ export const links: linkGroup[] = [
     title: "Music",
     links: [
       {
-        label: "i wanna be a cowboy",
-        value: "https://www.youtube.com/watch?v=8zWz92f_HGs",
+        label: "./jellyfin",
+        value: "http://192.168.2.81:8096/web/#/home",
       },
       {
-        label: "let the bodies hit the floor",
-        value: "https://www.youtube.com/watch?v=b--VKaCB9u0",
+        label: "./musicbrainz",
+        value: "https://musicbrainz.org/",
       },
       {
-        label: "Nobody Kanna Cross It",
-        value: "https://www.youtube.com/watch?v=2wqTnwJGvtc",
+        label: "./discogs",
+        value: "https://www.discogs.com/",
       },
       {
-        label: "Smug Dancin",
-        value: "https://www.youtube.com/watch?v=eNZ9Od1jQ4Q",
+        label: "./bandcamp",
+        value: "https://bandcamp.com/dazen95/feed",
       },
       {
-        label: "Utamaru - The Sanctified Mind Cover",
-        value: "https://www.youtube.com/watch?v=MHlJKLlS07U",
+        label: "./youtube",
+        value: "https://www.youtube.com/",
+      },
+      {
+        label: "./soundcloud",
+        value: "https://soundcloud.com/discover",
+      },
+      {
+        label: "./spotify/to/youtube",
+        value: "https://spotifyreleaselist.netlify.app/",
       },
     ],
   },
   {
-    title: "Sauce",
+    title: "Raindrop.io",
     links: [
       {
-        label: "Pictures - DeathAndMilk",
-        value: "https://www.instagram.com/deathandmilk_/",
+        label: "./linux",
+        value: "https://app.raindrop.io/my/51979736",
       },
       {
-        label: "Icons - FontAwesome",
-        value: "https://fontawesome.com/icons",
+        label: "./customization",
+        value: "https://app.raindrop.io/my/52155503",
       },
       {
-        label: "Text Flicker - CodeMyUI",
-        value:
-          "https://codemyui.com/crt-screen-text-flicker-animation-in-pure-css/",
+        label: "./server",
+        value: "https://app.raindrop.io/my/53305784",
       },
       {
-        label: "Wave Animation - mburakerman",
-        value: "https://codepen.io/mburakerman/pen/eRZZEv",
+        label: "./coden",
+        value: "https://app.raindrop.io/my/53032181",
       },
       {
-        label: "Da real sauce ԅ(♡﹃♡ԅ)",
-        value: "https://www.youtube.com/watch?v=qr89xoZyE1g",
-      },
-      {
-        label: "Even more real sauce ( ͡° ͜ʖ ͡°)",
-        value: "https://www.youtube.com/watch?v=VLhJOd_TFiI",
+        label: "./music/to/download",
+        value: "https://app.raindrop.io/my/52101006",
       },
     ],
   },
 ]
 
-export const images: dataElem[] = [
+export const images: dataElem[] = [                                             /* ENDE der Blöcke */
   { label: "pic_1", value: pic_1 },
   { label: "pic_2", value: pic_2 },
   { label: "pic_3", value: pic_3 },
@@ -214,14 +236,13 @@ export interface Theme {
 
 export const themes: Theme[] = [
   {
-    name: "Catppuccin",
-    image:
-      "https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png",
+    name: "Gruvbox Material",                                             /* Hier habe ich mein eigenes Gruvbox TTheme reingebaut*/
+    image: pic_8,                                                         /*Viele Themes werden definiert, aber wie ich sie schnell ändere kp */
     colors: {
-      "--bg-color": "#24273A",
-      "--default-color": "#CAD3F5",
-      "--accent-color": "#C6A0F6",
-      "--accent-color2": "#8AADF4",
+      "--bg-color": "#312c28",
+      "--default-color": "#ddc7a1",
+      "--accent-color": "#e78a4e",
+      "--accent-color2": "#a9b665",
     },
   },
   {
